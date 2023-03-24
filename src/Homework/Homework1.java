@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class HomeWork1 {
+public class Homework1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); //sử dụng đối tượng Scanner để nhập dữ liệu từ bàn phím
 
