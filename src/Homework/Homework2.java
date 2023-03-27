@@ -9,7 +9,7 @@ public class Homework2 {
         String name;
         String address;
         String continueChoice;
-        // khởi tạo biến kiểu age, giá trị mặc định là 0
+        // khởi tạo biến age kiểu int, giá trị mặc định là 0
         int age;
 
         do {
