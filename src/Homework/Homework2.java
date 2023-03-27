@@ -26,7 +26,7 @@ public class Homework2 {
             age = Integer.parseInt(ageString); //chuyển đổi chuỗi (string) thành kiểu số nguyên (integer) rồi lưu vào biến age
 
             //in ra thông tin đã nhập trước đó
-            //printf cho phép định dạng và hiển thị các giá trị khác được chèn vào trong chuỗi
+                //printf cho phép định dạng và hiển thị các giá trị khác được chèn vào trong chuỗi
             System.out.printf("Name: %s %n", name);       //%s dùng để hiển thị giá trị kiểu String của biến name và address
             System.out.printf("Address: %s %n", address); //%n dùng để thêm một ký tự xuông dòng (new line)
             System.out.printf("Age: %d %n", age);         //%d được dùng để hiện thị giá trị kiểu int của biến age
