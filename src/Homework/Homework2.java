@@ -16,11 +16,10 @@ public class Homework2 {
             //yêu cầu nhập tên
             System.out.println("Enter your name: ");
             name = sc.nextLine();
-
             //yêu cầu nhập địa chỉ
             System.out.println("Enter your address: ");
             address = sc.nextLine();
-
+            //yêu cầu nhập tuổi
             System.out.println("Enter your age: ");
             String ageString = sc.nextLine(); //đọc dữ liệu từ bàn phím, lưu dữ liệu đó vào biến ageString dưới dạng chuỗi (string)
             age = Integer.parseInt(ageString); //chuyển đổi chuỗi (string) thành kiểu số nguyên (integer) rồi lưu vào biến age
