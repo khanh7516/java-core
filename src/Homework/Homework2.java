@@ -33,7 +33,7 @@ public class Homework2 {
 
             //hỏi người dùng có muốn nhập tiếp hay không
             System.out.println("Do you want to continue? (Y/N)");
-            continueChoice = sc.nextLine(); //lưu câu trả lời của người dùng vào biến continueChoice với 2 giá trị (Y/N)
+            continueChoice = sc.nextLine(); //lưu câu trả lời của người dùng vào biến continueChoice với 2 giá trị y hoặc n kiểu dữ liệu String
         }
         //đối chiếu giá trị nhập vào nếu là y(Y) tiếp tục thực hiện đoạn mã trong vòng lặp do-while
         //nếu không, thoát khỏi vòng lặp do-while
