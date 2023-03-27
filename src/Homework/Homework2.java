@@ -37,6 +37,6 @@ public class Homework2 {
         }
         //đối chiếu giá trị nhập vào nếu là y(Y) tiếp tục thực hiện đoạn mã trong vòng lặp do-while
         //nếu không, thoát khỏi vòng lặp do-while
-        while (continueChoice.equalsIgnoreCase("Y"));
+        while (continueChoice.equalsIgnoreCase("Y")); //biểu thức bên trong cặp dấu ngoặc đơn của while trả về giá trị có kiểu boolean (true/ false)
     }
 }
