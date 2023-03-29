@@ -16,7 +16,7 @@ public class StringCapitalizer {
 
         for (String word: words) { //dùng forloop duyệt từng phần tử (word) trong mảng words (word có kiểu String) (VD với phần tử đầu tiên: word = "ngô")
             String wordCapitalized = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase(); //dùng method substring tách word thành 2 phần: chữ cái đầu (substring(0, 1) và các chữ cái còn lại (substring(1))
-                                                                                                                //chữ cái đầu được viết hoa (toUpperCase) các chữ cái còn lại viết thường (toLowerCase) sau đó cộng 2 chuỗi lại lưu vào biến mới
+                                                                                                                //chữ cái đầu được viết hoa (toUpperCase) các chữ cái còn lại viết thường (toLowerCase) sau đó cộng 2 chuỗi lại và lưu vào biến mới
                                                                                                                     //VD: "ngô" -> "N" + "gô" -> "Ngô"
             newStr += wordCapitalized; //cộng chuỗi word vừa biến đổi vào biến newStr
             newStr += " ";            //cộng ký tự khoảng cách vào biến newStr -> tạo khoảng cách giữa các word
