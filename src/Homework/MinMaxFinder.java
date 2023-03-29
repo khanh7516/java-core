@@ -20,7 +20,7 @@ public class MinMaxFinder {
         System.out.print("Hiện các phần tử của mảng: ");
         System.out.println(Arrays.toString(array)); //dùng method toString để in ra mảng dưới dạng chuỗi VD: [1, 2, 3]
 
-        //Sử dụng 2 để tìm max và min trong 1 mảng
+        //Sử dụng 2 cách để tìm max và min trong 1 mảng
         //Cách 1: Dùng lớp Array và phương thức sort
         int[] arrCopy = Arrays.copyOf(array, size); //dùng copyOf copy mảng cũ (array) sang mảng mới (arrCopy) để khi dùng sort trật tự mảng cũ không đổi
         Arrays.sort(arrCopy); //dùng method sort để sắp xếp các phần tử của mảng arrCopy theo giá trị tăng dần của các phần tử
