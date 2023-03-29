@@ -9,7 +9,7 @@ public class StringCapitalizer {
         System.out.println("Nhập họ và tên: ");
         String aString = sc.nextLine(); //gán chuỗi vừa nhập vào biến aString ( VD: "ngô gia khánh")
 
-        String[] words = aString.split(" ");  //dùng phương thức split của lớp String để tách chuỗi (aString) thành các phần tử rồi lưu vào mảng words (các phần tử có kiểu String)
+        String[] words = aString.split(" ");  //dùng method split của lớp String để tách chuỗi (aString) thành các phần tử rồi lưu vào mảng words (các phần tử có kiểu String)
                                                         //với split(" ") -> khi gặp khoảng trắng split sẽ tự tách chuỗi thảnh phần tử mới rồi đưa vào mảng
                                                             //VD "ngô gia khánh" -> ["ngô", "gia", "khánh"]
         String newStr = "";   //khởi tạo một biến newStr kiểu String, gán giá trị "" (một chuỗi trống)
@@ -21,6 +21,7 @@ public class StringCapitalizer {
             newStr += wordCapitalized; //cộng chuỗi word vừa biến đổi vào biến newStr
             newStr += " ";            //cộng ký tự khoảng cách vào biến newStr -> tạo khoảng cách giữa các word
         } //kết thúc loop các word được viết in hoa chữ cái đầu, có khoảng cách đều nhau và lưu vào một chuỗi mới (VD: "Ngô Gia Khánh ")
+
         String strCapitalized = newStr.trim(); //loại bỏ khoảng trắng thừa của chuỗi mới  VD: "Ngô Gia Khánh " -> "Ngô Gia Khánh"
         System.out.println(strCapitalized);    //in ra chuỗi họ tên đã được được chuẩn hóa
     }
