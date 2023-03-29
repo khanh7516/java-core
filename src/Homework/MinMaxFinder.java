@@ -2,7 +2,7 @@ package Homework;
 
 import java.util.Arrays;
 import java.util.Scanner;
-//Cau 3
+//Câu 3
 public class MinMaxFinder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

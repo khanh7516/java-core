@@ -23,11 +23,11 @@ public class EvenIncreaser {
 
         int[] newArray = Arrays.copyOf(array, size); //dùng copyOf copy mảng cũ sang mảng mới (newArray)
         for (int i = 0; i < size; i++) {            // duyệt từng phần tử trong mảng newArray
-            newArray[i] = (newArray[i] % 2 == 0) ? newArray[i] + 1 : newArray[i];
-        }
-
+            newArray[i] = (newArray[i] % 2 == 0) ? newArray[i] + 1 : newArray[i]; //(toán tử bậc 3) kiểm tra nếu phần tử trong mảng có chia hết cho 2 hay không (true/false)
+        }                                                                               //nếu có (true): cộng phần tử đó lên 1 đơn vị
+                                                                                            //nếu không (false): giữ nguyên giá trị của phần tử
         //hiện mảng mới
         System.out.print("Các số chẵn trong mảng tăng lên 1: ");
-        System.out.printf("%s -> %s", Arrays.toString(array), Arrays.toString(newArray));
+        System.out.printf("%s -> %s", Arrays.toString(array), Arrays.toString(newArray)); //output: [1, 2, 3] -> [1, 3, 3]
     }
 }
