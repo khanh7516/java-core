@@ -32,7 +32,7 @@ public class MinMaxFinder {
         int minE = array[0];
         for (int i = 1; i < size; i++) { //duyệt các phần tử trong mảng bắt đầu từ phần tử có index = 1 tới phần tử cuối cùng
             maxE = Math.max(maxE, array[i]); //tìm giá trị lớn nhất giữa biến maxE và phần tử được duyệt, gán lại kết quả mới vào maxE
-            minE = Math.min(minE, array[i]); //tìm giá trị nhỏ nhất giữa biến minE và phần tử được duyệt, gán lại kết quả mới vào maxE
+            minE = Math.min(minE, array[i]); //tìm giá trị nhỏ nhất giữa biến minE và phần tử được duyệt, gán lại kết quả mới vào minE
         } //sau khi kết thúc vòng lặp -> toàn bộ phần tử trong mảng được duyệt -> 2 biến maxE và minE đã có giá trị là phần tử lớn nhất, phần tử nhỏ nhất trong mảng
 
         //in ra phần tử lớn nhất và nhỏ nhất của mảng được nhập theo 2 cách
