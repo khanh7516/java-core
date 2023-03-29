@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class EvenIncreaser {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         //yêu cầu người dùng nhập số lượng phần tử -> chính là kích thước của mảng ( 1 chiều)
         System.out.println("Nhập số lượng phần tử: ");
         int size = sc.nextInt();      //gán số nguyên được người dùng nhập vào cho biến size (int)
@@ -19,11 +18,11 @@ public class EvenIncreaser {
         }
         //hiện mảng vừa nhập
         System.out.print("Hiện các phần tử của mảng: ");
-        System.out.println(Arrays.toString(array)); //sử dụng phương thức toString để in ra mảng dưới dạng chuỗi VD: [1, 2, 3]
-
+        System.out.println(Arrays.toString(array)); //dùng method toString để in ra mảng dưới dạng chuỗi VD: [1, 2, 3]
+        //thay đổi phần tử
         int[] newArray = Arrays.copyOf(array, size); //dùng copyOf copy mảng cũ sang mảng mới (newArray)
         for (int i = 0; i < size; i++) {            // duyệt từng phần tử trong mảng newArray
-            newArray[i] = (newArray[i] % 2 == 0) ? newArray[i] + 1 : newArray[i]; //(toán tử bậc 3) kiểm tra nếu phần tử trong mảng có chia hết cho 2 hay không (true/false)
+            newArray[i] = (newArray[i] % 2 == 0) ? newArray[i] + 1 : newArray[i]; //kiểm tra nếu phần tử trong mảng có chia hết cho 2 hay không (true/false)
         }                                                                               //nếu có (true): cộng phần tử đó lên 1 đơn vị
                                                                                             //nếu không (false): giữ nguyên giá trị của phần tử
         //hiện mảng mới

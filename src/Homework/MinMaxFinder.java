@@ -18,12 +18,12 @@ public class MinMaxFinder {
         }
         //hiện mảng vừa nhập
         System.out.print("Hiện các phần tử của mảng: ");
-        System.out.println(Arrays.toString(array)); //sử dụng phương thức toString để in ra mảng dưới dạng chuỗi VD: [1, 2, 3]
+        System.out.println(Arrays.toString(array)); //dùng method toString để in ra mảng dưới dạng chuỗi VD: [1, 2, 3]
 
         //Sử dụng 2 để tìm max và min trong 1 mảng
         //Cách 1: Dùng lớp Array và phương thức sort
         int[] arrCopy = Arrays.copyOf(array, size); //dùng copyOf copy mảng cũ (array) sang mảng mới (arrCopy) để khi dùng sort trật tự mảng cũ không đổi
-        Arrays.sort(arrCopy); //dùng phương thức sort để sắp xếp các phần tử của mảng arrCopy theo giá trị tăng dần của các phần tử
+        Arrays.sort(arrCopy); //dùng method sort để sắp xếp các phần tử của mảng arrCopy theo giá trị tăng dần của các phần tử
         int max = arrCopy[size -1];  //phần tử lớn nhất là phần tử cuối cùng của mảng được sắp xếp tăng dần
         int min = arrCopy[0];       //phần tử nhỏ nhất là phần tử đầu tiên của mảng được sắp xếp tăng dần
 
