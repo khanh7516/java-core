@@ -5,8 +5,10 @@ public class Rectangle extends Geometry {
     private double width;
 
     public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+        if (length > 0 && width > 0) {
+            this.length = length;
+            this.width = width;
+        }else System.out.println("Length and width must be greater than 0");
     }
 
     public double getLength() {
@@ -14,7 +16,9 @@ public class Rectangle extends Geometry {
     }
 
     public void setLength(double length) {
-        this.length = length;
+        if (length > 0)
+            this.length = length;
+        else System.out.println("Length must be greater than 0");
     }
 
     public double getWidth() {
@@ -22,7 +26,9 @@ public class Rectangle extends Geometry {
     }
 
     public void setWidth(double width) {
-        this.width = width;
+        if (width > 0)
+            this.width = width;
+        else System.out.println("Width must be greater than 0");
     }
 
     @Override
