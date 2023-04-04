@@ -4,7 +4,7 @@ public class Square extends Geometry {
     private double side;
 
     public Square(double side) {
-        if (side > 0)
+        if (side > 0)               //kiểm tra cạnh hình vuông phải > 0
             this.side = side;
         else System.out.println("Side must be greater than 0");
     }

@@ -5,7 +5,7 @@ public class Rectangle extends Geometry {
     private double width;
 
     public Rectangle(double length, double width) {
-        if (length > 0 && width > 0) {
+        if (length > 0 && width > 0) {  //kiểm tra chiều dài, chiều rộng phải > 0
             this.length = length;
             this.width = width;
         }else System.out.println("Length and width must be greater than 0");
