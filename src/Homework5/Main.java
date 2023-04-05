@@ -20,7 +20,7 @@ public class Main {
         for (int i = 0; i < numberOfStudents; i++) { //duyệt mảng, yêu cầu nhập giá trị cho từng phần tử
             System.out.println("Sinh viên thứ " + (i + 1) );
             SinhVienTechMaster student = enterStudent(sc); //gọi phương thức enterStudent để nhập các thông tin, gán dữ liệu trả về vào biến student
-            students[i] = student; //gán dữ liệu trả về cho các phần tử
+            students[i] = student; //gán dữ liệu trả về cho các phần tử của mảng
         }
         for (int i = 0; i < numberOfStudents; i++) { //đưa ra thông tin của từng sinh viên vừa nhập
             System.out.println("Sinh viên thứ " + (i + 1) );
