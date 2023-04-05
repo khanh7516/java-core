@@ -31,7 +31,7 @@ public abstract class SinhVienTechMaster {
     public void xuat() {
         System.out.println("Họ tên: " + getName());
         System.out.println("Ngành học: " + getMajor());
-        System.out.println("Điểm: " + getDiem());
+        System.out.println("Điểm TB: " + getDiem());
         System.out.println("Học lực: " + getHocLuc());
     }
 }
