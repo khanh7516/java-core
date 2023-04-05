@@ -42,7 +42,7 @@ public class Main {
             System.out.println("1. IT");
             System.out.println("2. Biz");
             choice = Integer.parseInt(sc.nextLine());
-            if (choice != 1 && choice != 2) {         //kiểm tra, giá trị nhập vào đưa ra yêu cầu nhập lại
+            if (choice != 1 && choice != 2) {
                 System.out.println("Chỉ nhập 1 hoặc 2");
                 System.out.println("Nhập lại");
             } else {
